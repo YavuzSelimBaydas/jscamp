@@ -12,12 +12,15 @@ return true
 }
 function findPrime(...numbers) {
     for (let i = 0; i < numbers.length; i++) {
-        if (isPrime(numbers[i])) {
-            console.log(numbers[i] + " is Prime Number")
+        if (numbers[i]<0){
+            console.log(numbers[i] + " is invalid number.")
+        }
+        else if (isPrime(numbers[i])) {
+            console.log(numbers[i] + " is Prime Number.")
         }else{
-            console.log(numbers[i] + " is not Prime Number")
+            console.log(numbers[i] + " is not Prime Number.")
         }
     }
 }
 
-findPrime(0,1,2,3,6,9,765,899)
+findPrime(-5,0,1,2,3,6,9,765,899)
